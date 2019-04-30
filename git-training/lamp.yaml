@@ -1,0 +1,8 @@
+---
+- host: localhost
+  connection: ssh
+  become: true
+  task:
+  - name: install httpd
+    yum: httpd
+    state: latest
