@@ -4,5 +4,8 @@
   become: true
   task:
   - name: install httpd
-    yum: httpd
+    apt-get: httpd
+    state: latest
+  - name: install php
+    apt-get: httpd
     state: latest
